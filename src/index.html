@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="calculator-body">   
+            <div class="calculator-display">
+                <div>
+                    <input type="text" readonly id="display">
+                </div>
+                <div>
+                    <div class="calculator-buttons">
+                        <input class="btnNum" id="n7" type="button" value="7" onclick="appendToDisplay('7')"">
+                        <input class="btnNum" id="n8" type="button" value="8" onclick="appendToDisplay('8')">
+                        <input class="btnNum" id="n9" type="button" value="9" onclick="appendToDisplay('9')">
+                        <input class="btnNum" id="n4" type="button" value="4" onclick="appendToDisplay('4')">
+                        <input class="btnNum" id="n5" type="button" value="5" onclick="appendToDisplay('5')">
+                        <input class="btnNum" id="n6" type="button" value="6" onclick="appendToDisplay('6')">
+                        <input class="btnNum" id="n1" type="button" value="1" onclick="appendToDisplay('1')">
+                        <input class="btnNum" id="n2" type="button" value="2" onclick="appendToDisplay('2')">
+                        <input class="btnNum" id="n3" type="button" value="3" onclick="appendToDisplay('3')">
+                        <input class="btnNum" id="div" type="button" value="÷" onclick="appendToDisplay('/')">
+                        <input class="btnNum" type="button" id="n0" value="0" onclick="appendToDisplay('0')">
+                        <input class="btnNum" id="mul" type="button" value="x" onclick="appendToDisplay('*')">
+                        <input class="btnNum" id="sum" type="button" value="+" onclick="appendToDisplay('+')">
+                        <input class="equal" type="button" value="=" onclick="calculate()">
+                        <input class="btnNum" id="min" type="button" value="-" onclick="appendToDisplay('-')">
+                        <input type="button" class="btnNum" id="clear" value="AC" onclick="clearDisplay()" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
